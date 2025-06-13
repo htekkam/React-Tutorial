@@ -10,3 +10,8 @@
   color: #555;                    /* Slightly different text color for paragraph */
   font-size: 16px;
 }
+
+.images{
+  width: 200px;
+  height: 200px;
+} 
