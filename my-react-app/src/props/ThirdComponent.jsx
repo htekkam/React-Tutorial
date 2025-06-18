@@ -5,7 +5,7 @@ import React from 'react'
 const ThirdComponent = (props) => {
   return (
     <div>
-     {props.name}
+    this is third component
     </div>
   )
 }

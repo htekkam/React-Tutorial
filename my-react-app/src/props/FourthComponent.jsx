@@ -5,7 +5,7 @@ import React from 'react'
 const FourthComponent = (props) => {
   return (
     <div>
-      {props.name}
+      this is fourth component
     </div>
   )
 }

@@ -3,10 +3,14 @@
 import React from 'react'
 
 const FirstComponent = (props) => {
-    console.log(props)
+    const {firstName,lastName,surName} = props.myDetails
   return (
     <div>
-      {props.name}
+      <h2>My details</h2>
+      <div>{firstName}</div>
+      <div>{lastName}</div>
+      <div>{surName}</div>
+      
     </div>
   )
 }
