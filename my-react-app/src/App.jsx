@@ -9,6 +9,7 @@ import StateManagement from './StateManagement'
 import ClickEvent from './ClickEvent'
 import FormExample from './FormExample'
 import FormExample2 from './FormExample2'
+import SampleArray from './SampleArray'
 
 let a = "Thriller"
 let b = "Suspense"
@@ -45,6 +46,7 @@ function App() {
       <br/>
      
       <FormExample2/>
+      <SampleArray/>
     </div>
   )
 }
