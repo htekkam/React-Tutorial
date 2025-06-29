@@ -8,6 +8,7 @@ import FourthComponent from './props/FourthComponent'
 import StateManagement from './StateManagement'
 import ClickEvent from './ClickEvent'
 import FormExample from './FormExample'
+import FormExample2 from './FormExample2'
 
 let a = "Thriller"
 let b = "Suspense"
@@ -42,7 +43,8 @@ function App() {
       }</h2>
       <ClickEvent/>
       <br/>
-      <FormExample/>
+     
+      <FormExample2/>
     </div>
   )
 }
