@@ -1,9 +1,25 @@
 
 
-import React, { useState } from 'react'
+import React, { useState,useEffect } from 'react'
 import { toast } from 'react-toastify'
 
 const Employee = () => {
+
+     const API_URL = "http://localhost:8080/api/v1/employees"
+    const [empGrid,setEmpGrid] = useState([])
+    const empGridData = async ()=>{
+      alert('inside empGridData')
+      const response = await fetch(API_URL)
+      const  data = await response.json();
+      alert(data)
+      setEmpGrid(data)
+
+    }
+     useEffect(() =>{
+        console.log(empGridData())
+    },[])
+    console.log(empGrid)
+    
   const [firstName,setFirstName] = useState("")
   const [lastName,setLastName] = useState("")
   const [emailId,setEmailId] = useState("") 
@@ -12,7 +28,7 @@ const Employee = () => {
   const empDetails = {firstName,lastName,emailId}
 
   const empHandler = async(e)=>{
-    e.preventDefault()
+    /**e.preventDefault() */
     console.log(empDetails)
     
   try {
@@ -24,11 +40,11 @@ const Employee = () => {
       body:JSON.stringify(empDetails)
     })
 
-    alert('data posted successfully')
+    
     
   } catch (error) {
     
-    alert('could not post the data')
+    
   }
     
    
@@ -48,7 +64,26 @@ const Employee = () => {
                                
                 <button type='submit'>Submit</button>
             </form>
+              <table>
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        {empGrid.map((row) => (
+          <tr>
+            <td align='center'>{row.firstName}</td>
+            <td align='center'>{row.lastName}</td>
+            <td align='center'>{row.emailId}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
         </div>
+        
     </div>
   )
 }

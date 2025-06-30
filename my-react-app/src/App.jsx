@@ -13,6 +13,8 @@ import SampleArray from './SampleArray'
 import TemplateString from './TemplateString'
 import UserDetails from './UserDetails'
 import Employee from './Employee'
+import Circuit from './Circuit'
+import SpreadOpreator from './SpreadOpreator'
 
 let a = "Thriller"
 let b = "Suspense"
@@ -53,6 +55,8 @@ function App() {
       <TemplateString/>
       {/* <UserDetails/> */}
       <Employee/>
+      <Circuit/>
+      <SpreadOpreator/>
     </div>
   )
 }
