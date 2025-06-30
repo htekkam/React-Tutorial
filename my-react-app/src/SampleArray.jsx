@@ -1,6 +1,9 @@
 
 
 import React from 'react'
+import { userData } from './data'
+
+console.log(userData)
 
 let sampleArray = ["hari",35,{job:"job-less"},{hobbies:"playing cricket"}]
 let personalInfo = [
@@ -8,6 +11,19 @@ let personalInfo = [
         dish:"chicken",
         player:"sachin"
     }
+]
+let eductionDetails=[
+  {
+    ssc:"bvk school",
+    inter:"Sri Chaitanya",
+    btech:"Ranga reddy",
+    
+  },
+  {
+    sscmarks:90,
+    intermarks:90,
+    btechmarks:70
+  }
 ]
 
 
@@ -25,6 +41,20 @@ const SampleArray = () => {
             </div>
         )
       })}
+      <div>
+        {
+          userData.map((data) =>{
+            return(
+               <div style={{border:"1px solid green"}}> 
+                <div>User Name :{data.username}</div>
+                <div>Eamil :{data.email}</div>
+                <div>Address: {data.address.street}</div>
+                <div>location: {data.address.geo.lat}</div>
+               </div>
+            )
+          })
+        }
+      </div>
     </div>
   )
 }
