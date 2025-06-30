@@ -10,6 +10,9 @@ import ClickEvent from './ClickEvent'
 import FormExample from './FormExample'
 import FormExample2 from './FormExample2'
 import SampleArray from './SampleArray'
+import TemplateString from './TemplateString'
+import UserDetails from './UserDetails'
+import Employee from './Employee'
 
 let a = "Thriller"
 let b = "Suspense"
@@ -47,6 +50,9 @@ function App() {
      
       <FormExample2/>
       <SampleArray/>
+      <TemplateString/>
+      {/* <UserDetails/> */}
+      <Employee/>
     </div>
   )
 }
