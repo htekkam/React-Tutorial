@@ -8,10 +8,10 @@ const EmpGrid = () => {
     
     const [empGrid,setEmpGrid] = useState([])
     const empGridData = async ()=>{
-      alert('inside empGridData')
+     // alert('inside empGridData')
       const response = await fetch(API_URL)
       const  data = await response.json();
-      alert(data)
+      //alert(data)
       setEmpGrid(data)
 
     }
