@@ -1,0 +1,37 @@
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+div{
+    color: green;
+}
+#thriller {
+    color: red;
+}
+.headings{
+    color: brown;
+    background-color: bisque;
+}
+.message {
+    width: 500px;
+    height: 100px;
+    background-color: red;
+    border: 3px solid black;
+}
+.message>p>span{
+    color: black;
+    font-size: x-large;
+    border: 1px solid green;
+}
+.sample{
+    column-count: 4;
+    border:1px solid black;
+    column-gap: 50px;
+    padding-top: 20px;
+    margin-top: 5px;
+    font-size: 100;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+*{
+    font-family: "PT Sans", sans-serif;
+}

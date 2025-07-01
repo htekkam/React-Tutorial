@@ -1,0 +1,46 @@
+-> Short cut to create boiler plate html code in vs code
+     shitf+1 -> enter
+	 
+selectors
+----------------------------------
+
+-> For class it is .{} and for id it is  #{}
+
+Measurement units
+--------------------------------------
+
+pixels (px)
+
+percentage(%)
+-----------------------
+-> when we give 50% or 100% means it is 50% of the main screen.
+
+-> we can also vh to set the height of the component to screen level . For example : height: 100vh
+
+Border
+------------------
+we  need to define the below properties for any Border
+units border-style color
+
+Text decoration
+------------------
+1.span 
+2.text align
+3. word spacing
+4. letter spacing
+-> shortcut to create sample data for paragraph is lorem20 +  enter
+-> column-gap decides the gap between the columns
+-> column-count property decide how many columns should be displayed in a paragraph
+    sample{
+    column-count: 4;
+    border:1px solid black;
+    column-gap: 5px;
+    
+}
+-> We can import the font from goole fonts. There we can customize the fonts and import the url in css file as follows
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+-> If we use *{  we can apply styles to all the components of th page
+
+}
+-> We use letter-spacing/ word-spacing property  to give space between letters .
