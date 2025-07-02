@@ -35,3 +35,150 @@ div{
 *{
     font-family: "PT Sans", sans-serif;
 }
+
+.box-model{
+
+    border: 30px solid black;
+    text-align: center;
+    width: 300px;
+    margin: 100px;
+
+    padding: 100px;
+    box-sizing: border-box;
+}
+.picture-box{
+    border: 2px solid green;
+    width: 300px;
+    height: 300px;
+    background-image: url("images/img-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+.img-1{
+    width: 100%;
+    height: 100%;
+}
+/* body{
+    background-image: url("images/img-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+} */
+
+h2{
+    color: red;
+    border: 1px solid black;
+}
+div h2{
+    color: blue;
+}
+div .sample{
+    border: 5px solid green;
+}
+div  p{
+    background-color: lightsalmon;
+}
+
+div > #course{
+    background-color: blue;
+}
+.box-container{
+    border: 2px solid black;
+    
+}
+.box-1{
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    display: inline-block;
+}
+.box-2{
+    width: 100px;
+    height: 100px;
+    background-color:antiquewhite;
+    display: inline-block;
+}
+.box-3{
+    width: 100px;
+    height: 100px;
+    background-color: yellowgreen;
+    display: inline-block;
+}
+.box-4{
+    width: 100px;
+    height: 100px;
+    background-color: wheat;
+    display: inline-block;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    border: 1px solid red;
+
+}
+
+.position-relative-demo{
+    border: 1px solid black;
+    margin: 100px;
+}
+.div-1{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    display: inline-block;
+    left: 400px;
+    top: 100px;
+    position:relative
+    
+}
+.div-2{
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    display: inline-block;
+
+}
+.position-absolute-demo{
+    border: 1px solid black;
+    width: 500px;
+    margin: 100px;
+    padding: 50px;
+    position: relative;
+}
+.box-5{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    background-color: bisque;
+    color: red;
+    position: absolute;
+    left: 100px;
+    top: 100px
+    
+}
+.box-6{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    background-color: black;
+    color: red;
+}
+.box-7{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    background-color: green;
+    color: red;
+}
+.box-8{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    background-color: gray;
+    color: red;
+}

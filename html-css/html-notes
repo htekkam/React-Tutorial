@@ -44,3 +44,88 @@ Text decoration
 
 }
 -> We use letter-spacing/ word-spacing property  to give space between letters .
+
+box model
+--------------------------
+-> Each component in html contains 4 layers margin , border, padding and content.
+-> In short form we can define the values for padding and margin as 
+     padding: 5px 10px 15px 40px denotes top, right,bottom,left.
+
+-> using  box-sizing property and value as 'border-box' we can fix the width of a div
+otherwise the width of the div will increase with border and padding values.
+box-sizing: border-box
+
+styling images
+---------------------------------------
+-> when we place an image inside a div , we can use the width and height properties image to fit inside the div.
+.picture-box{    //this is div
+    border: 2px solid green;
+    width: 300px;
+    height: 300px;
+}
+.img-1{   //this image inside div
+    width: 100%;
+}
+-> Similarly we can use the  below properties to style the back ground images
+background-image: url("images/img-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;  //to occupy the entire area
+    background-position: center;  //to fit the image to center
+
+
+Element selectors
+-------------------------------------------
+-> In this selectors like element,id, class, descendent, child . we can define different css as follows.
+div h2{
+    color: blue;
+}
+div .sample{  //descendent
+    border: 5px solid green;
+}
+div  p{  //element
+    background-color: lightsalmon;
+}
+
+div > #course{ //child
+    background-color: blue;
+}
+
+Display
+------------------------
+-> We have display types like block, inline, inline-block, none.
+block -> takes 100% width and does not allow next element .
+inline -> height and width will not apply but elements displayed in one line
+inline-block -> displays in line and with specified height and width.
+none -> element will disappear.
+
+Position
+-----------------------
+-> position-relative in addition with helper properties like top,left, bottom and right, moves the elements relative its next element
+
+-> position-absolute means the position of the element becomes free and it is displayed according to the parent.It will be displayed based on the helper properties.
+
+-> To mark the parent of this element, we need to define the position of the parent as absolute,  otherwise it will take parent as body and it will positioned according to body element.
+
+-> from the below code box-5 position will be displayed according position of  parent element.
+
+.parent{
+    border: 1px solid black;
+    width: 500px;
+    margin: 100px;
+    padding: 50px;
+    position: relative;
+}
+.box-5{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    background-color: bisque;
+    color: red;
+    position: absolute;
+    top: 100px
+}
+
+
+
+
+    

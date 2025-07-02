@@ -23,6 +23,9 @@ import ThirdPage from './routing/ThirdPage'
 import FourthPage from './routing/FourthPage'
 import Navbar from './Navbar'
 import EmpGrid from './EmpGrid'
+import { GiftProvider } from './context/ExampleContext'
+import { UtilProvider } from './context/UtilityContext'
+import UtilComponent from './props/UtilComponent'
 
 let a = "Thriller"
 let b = "Suspense"
@@ -67,8 +70,16 @@ function App() {
       <Circuit/>
       <SpreadOpreator/>
       <MultiState/>
+      <Navbar/>
      */}
-     <Navbar/>
+     
+     <GiftProvider>
+      <ThirdComponent/>
+           </GiftProvider>
+     <UtilProvider>
+       <UtilComponent/>
+     </UtilProvider>
+     
      <Routes>
       <Route path='/first' element ={ <Employee/>}/>
       <Route path='/second' element ={ <SecondPage/>}/>

@@ -2,6 +2,10 @@
 
 import React from 'react'
 
+const secondCompDetails ={
+  name:"second-component"
+}
+
 const SecondComponent = (props) => {
   const {model,year,dealer,color} = props.myCar
   return (
