@@ -182,3 +182,61 @@ body{
     background-color: gray;
     color: red;
 }
+.paper{
+    border: 1px solid black;
+    column-count: 4;
+}
+.paper img {
+    
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+}
+.nav-bar{
+    top: 0;
+    width: 100%;
+    color: white;
+    background-color: gray;
+    text-align: center;
+    position:sticky
+    
+    
+}
+.men-image-1{
+    border: 2px solid black;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+}
+.men-image-1 img{
+    width: 100%;
+    height: 100%;
+}
+.men-image-2{
+    border: 2px solid black;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    display: inline-block
+    
+}
+.men-image-2 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.men-image-3{
+    border: 2px solid black;
+    border-radius: 10px;
+    width:200px;
+    height: 200px;
+    display: inline-block
+    
+}
+.men-image-3 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px
+}

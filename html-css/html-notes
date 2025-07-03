@@ -100,11 +100,14 @@ none -> element will disappear.
 
 Position
 -----------------------
--> position-relative in addition with helper properties like top,left, bottom and right, moves the elements relative its next element
+-> position-relative in addition with helper properties like top,left, bottom and right, move
+the elements relative its next element
 
--> position-absolute means the position of the element becomes free and it is displayed according to the parent.It will be displayed based on the helper properties.
+-> position-absolute means the position of the element becomes free and it is displayed according 
+to the parent.It will be displayed based on the helper properties.
 
--> To mark the parent of this element, we need to define the position of the parent as absolute,  otherwise it will take parent as body and it will positioned according to body element.
+-> To mark the parent of this element, we need to define the position of the parent as relative,  
+otherwise it will take parent as body and it will positioned according to body element.
 
 -> from the below code box-5 position will be displayed according position of  parent element.
 
@@ -125,6 +128,32 @@ Position
     top: 100px
 }
 
+
+Color elements
+--------------------------------
+-> We use rgb, hex and hsl for color combinations
+
+Fixed positioning
+-----------------------------------------------------
+We can fix position of element using the below  css
+.paper img {
+    
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+
+}
+-> position :sticky  allows the element to be sticked to its position and allows scrolling of other elements.
+but in fixed position the element scroll to the top and disappears.
+
+Border radius
+-------------------------------------------
+-> If we give border radius as  50% any div will become circle
+-> If we give in px then edges will be slighly cut.
+    border-radius: 50%;
+    border-radius: 10px
 
 
 
