@@ -155,6 +155,65 @@ Border radius
     border-radius: 50%;
     border-radius: 10px
 
+Pseudo classes
+--------------------------------
+-> There are used to define special state of an element.
+-> Like :hover, :active, :focus, :first-child, :last-child, :nth-child, :checked
+
+.pseudo-demo :hover{
+    width: 200px;
+    height: 200px;
+    
+}
+
+.test-btn:active{
+    background-color: blue;
+}
+
+.input-form input:focus{
+    background-color: rgb(8, 230, 156);
+}
+.books-list ol li:first-child {
+
+    color: rgb(161, 14, 14);
+}
+.books-list ol li:nth-child(5) {
+
+    color: rgb(161, 14, 14);
+}
+input[type=checkbox]:checked+label{
+    color: red;
+    font-size: larger;
+}
+
+Pseudo-elements
+--------------------------------------------
+-> These are used to style the parts of the element using ::before, ::after, ::first-line,
+   ::first-letter and ::placeholder
+   .test-message p::before{
+   content: "This is before pseudo element ";
+   color: brown;
+   
+}
+.test-message p::after{
+    content: " this is after pseudo element";
+    color: blue;
+}
+.test-message{
+    background-color: black;
+}
+.test-message p::first-letter{
+    color: yellow;
+}
+.test-message p::first-line{
+    color: red;
+}
+input::placeholder{
+    color: red;
+}
+
+
+
 
 
     
