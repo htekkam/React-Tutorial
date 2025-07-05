@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition properties demo</title>
+</head>
+<style>
+    .box{
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+        color:black;
+        background-color: red;
+        margin-top: 200px;
+        margin-left: 550px;
+        /* transition-property: all;
+        transition-delay: 0.5s;
+        transition-duration: 1s;
+        transition-timing-function: linear; */
+        transition: all 1s 1s linear;
+    }
+    .box:hover{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-color: lightcoral;
+        
+    }
+</style>
+<body>
+    <div class="box">
+        Transition box
+    </div>
+</body>
+</html>

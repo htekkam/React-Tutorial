@@ -212,8 +212,125 @@ input::placeholder{
     color: red;
 }
 
+Gradient Effect
+-----------------------------------
+-> linearGradient()  -> multiple colors in the back ground.
+    background: linear-gradient(to right, red, blue ,yellow);
+
+-> radialGradient() -> forms a circle with multiple colors
+    background: radial-gradient(circle, rgb(200, 200, 225),rgb(201, 11, 11),green);
 
 
+Units
+---------------------
+-> rem, em are based on the font size. If font-size is 16px then 1rem->16 px
+-> The difference here is rem takes size based on font size of root element where as em takes size
+    based on its parent element
 
+    html{
+    font-size: 10px;
+}
 
+/* here rem-box width will be decided based on the size root element html */
+.rem-box{
+    font-size: 20px;
+    width: 100rem;
+    background-color: red ;
+}
+em-box width will be decided based on its parent font-size i,e 20px here.
+.em-box{
+    font-size: 20px;
+    width: 100em;
+    background-color: black ;
+}
+
+vh, vw (viewport height , viewport width)
+----------------------------------------------
+-> vh  and vw displays the components based on different types of screen sizes. It means whether the screen is of 
+mobile , laptop, tab the component width and height will be same respective to its screen size
+
+.view-port{
+    width: 100vw;  
+    background-color: red;
+    height: 100vh;
+}
+
+flex display
+-------------------------------
+-> If we want display item left to right in a line then we should use this line for each box inside flex
+   .flex-box-1{
+    background-color: brown;
+    /* for each element */
+    display: inline-block;  
+}
+.flex-box-2{
+    background-color: rgb(24, 3, 3);
+    display: inline-block;
+}
+
+-> We can do the same functionality but using the below styling inside the flex box itself
+-> here flex-demo is the outer div which contains sub divs.
+-> usig just-content:center we can display the flex items to the center of the screen.
+-> justify-content:space-between gives space between the items
+->  all the above properties for :horizontal display
+.flex-demo{
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
     
+}
+-> For vertical display  we use align property as follows.
+-> flex-wrap along  with align-content wraps the elements according to the width  of the flex
+        display: flex;
+        flex-wrap: wrap;
+-> flex-grow is used to allow the element to grow inside flex
+
+Media Queries
+--------------------------------------
+-> Media queries means responsivenes. It tells how components behave on different screen sizes.
+
+-> In the below example, the properties for the flex-box-6 will be applied when the screen width reaches
+  a minimum of 760px.
+
+@media (min-width:760px){
+    .flex-box-6{
+        background-color: aqua;
+        font-size: 3rem;
+        color: black;
+    }
+     
+}
+-> Similarly we can control the components between a specific range of screen width as follows.
+-> In the below example, with the screen width is in between 380-800 px then the  flex-box-5 properties 
+ will be changed.
+ @media (min-width:380px) and (max-width:800px){
+    .flex-box-5{
+        background-color: rgb(240, 162, 162);
+        font-size: 3rem;
+        color: black;
+    }}
+
+Transitions
+-----------------------------------------------
+-> These are used to apply the effects to an element smoothly. Using the below style tag we can mention
+the transition property for an element. It is used when we apply hover , focus etc.
+transition: all 1s 1s linear;  
+here all -> applied to width and height. If we want to apply for width or  heigth we can mention that instead of all.
+     1s  -> delay in seconds
+     1s  -> duration in seconds
+     linear -> timing function means how the transition should  be applied.
+     other values  are ease-in/ease-out/ease-in-out
+Example
+------------------
+   .box{
+        width: 100px;
+        height: 100px;
+        transition: all 1s 1s linear;  
+   }
+   box:hover{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-color: lightcoral;
+        
+    }  here transition is applied on hover 

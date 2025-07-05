@@ -315,3 +315,153 @@ input[type=checkbox]:checked+label{
 input::placeholder{
     color: red;
 }
+.gradient-linear{
+    /* background: linear-gradient(to right, red, blue ,yellow); */
+    height: 300px; 
+    width: 300px;
+}
+.gradient-linear h2{
+    color: wheat;
+}
+.gradient-radial{
+    /* background: radial-gradient(circle, rgb(200, 200, 225),rgb(201, 11, 11),green); */
+    height: 300px;
+    width: 300px;
+}
+html{
+    font-size: 10px;
+}
+.rem-box{
+    font-size: 20px;
+    width: 100rem;
+    background-color: red ;
+}
+.em-box{
+    font-size: 20px;
+    width: 100em;
+    background-color: black ;
+}
+.view-port{
+    width: 100vw;
+    background-color: red;
+    height: 100vh;
+}
+/* styles for flex demo */
+.flex-demo{
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    
+}
+.flex-demo-1{
+   border: 1px solid black;
+   align-items: flex-start;
+   height: 100vh;
+   display:flex;
+}
+.common-box{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    color: white;
+    font-size: medium;
+}
+.flex-box-1{
+    background-color: brown;
+    /* display: inline-block; */
+    flex-grow: 4;
+}
+.flex-box-2{
+    background-color: rgb(24, 3, 3);
+    /* display: inline-block; */
+}
+.flex-box-3{
+    background-color: rgb(75, 72, 72);
+    flex-grow: 2;
+    /* display: inline-block; */
+}
+.flex-box-4{
+    background-color: rgb(244, 8, 8);
+    /* display: inline-block; */
+}
+/* styles for flex-wrap-demo */
+.flex-wrap-demo{
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    gap: 10px;
+    
+}
+.flex-wrap-grow{
+    border: 1px solid black;
+    display: flex;
+   
+    align-content: space-evenly;
+    gap: 10px;
+    color: black;
+    
+    
+}
+
+.common-box-1{
+     width: 300px;
+    height: 300px;
+    color: white;
+}
+
+.flex-box-5{
+    background-color: brown;
+    flex-shrink: 5;
+}    
+
+.flex-box-6{
+    background-color: rgb(24, 3, 3);   
+}
+.flex-box-7{
+        background-color: rgb(75, 72, 72); 
+    
+}
+.flex-box-8{
+    background-color: rgb(244, 8, 8);
+    
+}
+
+/* @media (max-width:480px){
+    .flex-box-5{
+        background-color: yellow;
+        font-size: 3rem;
+        color: black;
+    }
+} */
+/* @media (min-width:760px){
+    .flex-box-6{
+        background-color: aqua;
+        font-size: 3rem;
+        color: black;
+    }
+     .flex-box-8{
+        background-color: blueviolet;
+        font-size: 3rem;
+        color: black;
+    }
+} */
+@media (min-width:380px) and (max-width:800px){
+    .flex-box-5{
+        background-color: rgb(240, 162, 162);
+        font-size: 3rem;
+        color: black;
+    }
+    .flex-box-6{
+        background-color: burlywood;
+    }
+    .flex-box-7, .flex-box-8{
+        display: none;
+    }
+}
+@media (max-width:700px){
+    .flex-wrap-grow{
+        display: flex;
+        flex-direction: column;
+    }
+}
